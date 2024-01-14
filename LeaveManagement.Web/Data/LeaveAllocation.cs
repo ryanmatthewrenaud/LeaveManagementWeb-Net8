@@ -2,9 +2,9 @@
 
 namespace LeaveManagement.Web.Data
 {
-    public class LeaveAllocation
+    // inheritting BaseEntity, as to not repeat code
+    public class LeaveAllocation : BaseEntity
     {
-        public int Id { get; set; }
 
         public int NumberOfDays { get; set; }
 
@@ -15,8 +15,5 @@ namespace LeaveManagement.Web.Data
 
         public string EmployeeID { get; set; }
 
-        public DateTime DateCreated { get; set; }
-
-        public DateTime DateModified { get; set; }
     }
 }
